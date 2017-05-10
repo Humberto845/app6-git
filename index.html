@@ -1,0 +1,378 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segundo Aplicacion</title>
+
+ <!--gupo CSS-->
+    <link rel="stylesheet" href="css/theme-app6.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+    <!--grupo JavaScript-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/acciones.js"></script>	
+    <script src="phonegap.js"></script>
+    
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+    <script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+
+<body onLoad="MM_preloadImages('IMG_20170405_113043.jpg','IMG_20170405_113100.jpg','IMG_20170405_113140.jpg','IMG_20170405_113405.jpg','IMG_20170405_113421.jpg','IMG_20170405_113528.jpg','IMG_20170405_113213.jpg','IMG_20170405_113546.jpg','IMG_20170405_113511.jpg','IMG_20170405_113118.jpg','IMG_20170405_113452.jpg','images/1.1.jpg','images/2.2.jpg','images/3.1.png')">
+
+<div data-role="page" id="Principal" data-theme="a">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Batalla de puebla </h1>
+        </div>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/batallapuebla.jpg" alt="batalla-puebla" title="batalla-puebla" id="wows1_0"/></li>
+		<li><img src="data1/images/batalla_de_puebla.jpg" alt="batalla de puebla" title="batalla de puebla" id="wows1_1"/></li>
+		<li><img src="data1/images/batalla_de_puebla1.jpg" alt="Batalla_de_Puebla-1" title="Batalla_de_Puebla-1" id="wows1_2"/></li>
+		<li><img src="data1/images/batalladepuebla.jpg" alt="batalla-de-puebla" title="batalla-de-puebla" id="wows1_3"/></li>
+		<li><img src="data1/images/batalladepueblapatricioramos.jpg" alt="batalla-de-puebla-patricio-ramos" title="batalla-de-puebla-patricio-ramos" id="wows1_4"/></li>
+		<li><img src="data1/images/batallapueblamexico.jpg" alt="batalla-puebla-mexico" title="batalla-puebla-mexico" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/descarga.jpg" alt="image slider" title="descarga" id="wows1_6"/></a></li>
+		<li><img src="data1/images/historiadelabatalladepueblamexico.jpg" alt="historia-de-la-batalla-de-puebla-mexico" title="historia-de-la-batalla-de-puebla-mexico" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="batalla-puebla"><span><img src="data1/tooltips/batallapuebla.jpg" alt="batalla-puebla"/>1</span></a>
+		<a href="#" title="batalla de puebla"><span><img src="data1/tooltips/batalla_de_puebla.jpg" alt="batalla de puebla"/>2</span></a>
+		<a href="#" title="Batalla_de_Puebla-1"><span><img src="data1/tooltips/batalla_de_puebla1.jpg" alt="Batalla_de_Puebla-1"/>3</span></a>
+		<a href="#" title="batalla-de-puebla"><span><img src="data1/tooltips/batalladepuebla.jpg" alt="batalla-de-puebla"/>4</span></a>
+		<a href="#" title="batalla-de-puebla-patricio-ramos"><span><img src="data1/tooltips/batalladepueblapatricioramos.jpg" alt="batalla-de-puebla-patricio-ramos"/>5</span></a>
+		<a href="#" title="batalla-puebla-mexico"><span><img src="data1/tooltips/batallapueblamexico.jpg" alt="batalla-puebla-mexico"/>6</span></a>
+		<a href="#" title="descarga"><span><img src="data1/tooltips/descarga.jpg" alt="descarga"/>7</span></a>
+		<a href="#" title="historia-de-la-batalla-de-puebla-mexico"><span><img src="data1/tooltips/historiadelabatalladepueblamexico.jpg" alt="historia-de-la-batalla-de-puebla-mexico"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">responsive slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+ <div data-role="collapsible" data-content-theme="false">
+            	<h1>4 de Mayo </h1>
+                  <div>
+                    <p>El 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.1</p>
+                   <p>Esta batalla culminó con una victoria republicana y debido a esto el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar a las tropas francesas del Conde de Lorencez en la batalla de Puebla.</p>
+<img src="images/4.jpg"> 
+<img src="images/4.1.jpg"> 
+                   <p><br>
+                   </p>
+                  </div>
+                  <div></div>
+                 </div>
+                 <div data-role="collapsible" data-content-theme="false">
+            	<h1>5 de Mayo</h1>
+                  <div>
+                   <p>La batalla de Puebla fue un combate librado el 5 de mayo de 1862 en las cercanías de la ciudad de Puebla, entre los ejércitos de la República Mexicana, bajo el mando de Ignacio Zaragoza, y del Segundo Imperio Francés, dirigido por Charles Ferdinand Latrille, conde de Lorencez, durante la Segunda Intervención Francesa en México, cuyo resultado fue una victoria importante para los mexicanos ya que con unas fuerzas consideradas como inferiores lograron vencer a uno de los ejércitos más experimentados y respetados de su época. Pese a su éxito, la batalla no impidió la invasión del país, sólo la retrasó, sin embargo, seria la primera batalla de una guerra que finalmente México ganaría. Los franceses regresarían al siguiente año, con lo que se libró una segunda batalla en Puebla en la que se enfrentaron 35 000 franceses contra 29 000 mexicanos (defensa que duró 62 días), y lograrían avanzar hasta la Ciudad de México, lo que permitió establecer el Segundo Imperio Mexicano.</p>
+                   <p>Finalmente, ante la incapacidad de consolidar un imperio y después de perder 11 000 hombres debido a la actividad guerrillera que nunca dejó de subsistir,1 los franceses se retiraron incondicionalmente del país en el año 1867</p>
+                   <img src="images/5.1.jpeg" width="200">
+                   <img src="images/5.1.jpg" width="198" height="152">
+                   <img src="images/5.2.jpg" width="200">
+                   <p><br>
+                   </p>
+                  </div>
+                  <div></div>
+                 </div>
+                 <div data-role="collapsible" data-content-theme="false">
+            	<h1>Leyenda del 5 de mayo </h1>
+                  <div>
+                    <p>Esta famosa batalla tuvo lugar en el año de 1862, en las proximidades de la Ciudad de Puebla, durante la llamada Segunda Intervención Francesa. El ejército de México estaba dirigido por Ignacio Zaragoza quien luchaba contra las tropas invasoras comandadas por Charles Ferdinand Latrille, conde de Lorencez.</p>
+                   <p>Cuenta una leyenda que un niño zacapoaxtla de la Sierra Norte de Puebla, se encontraba en la cercanía de los fuertes de Lorenzo y Guadalupe, que originalmente fueran capillas edificadas en el cerro Acueyametepec en honor a la Virgen de Loreto y a la Virgen de Guadalupe, y que en los inicios del siglo XIX se convirtieron en fortalezas militares. El lugar era clave para las tropas francesas, pues conquistando los fuertes, se abría el camino hacia la toma de la Ciudad de México. Por tanto era primordial para las tropas de Zaragoza conocer los movimientos de los soldados franceses.</p>
+                   <p>Como no podían ver bien la posición del enemigo, ni siquiera subiéndose a los árboles, cuyas ramas eran muy frágiles, el niño zacapoaxtla se subió ágilmente a un gran árbol con el fin de ver la posición de los soldados franceses y avisar a los mexicanos. Desde lo alto del árbol el niño iba diciendo a los mexicanos las posiciones y movimientos de los invasores.</p>
+                   <p><a href="http://www.mitos-mexicanos.com/wp-content/uploads/2016/12/364260642_3e046efa06_z.jpg"><img src="http://www.mitos-mexicanos.com/wp-content/uploads/2016/12/364260642_3e046efa06_z-300x225.jpg" alt="Los Fuertes de Lorenzo y Guadalupe" width="300" height="225" srcset="http://www.mitos-mexicanos.com/wp-content/uploads/2016/12/364260642_3e046efa06_z-300x225.jpg 300w, http://www.mitos-mexicanos.com/wp-content/uploads/2016/12/364260642_3e046efa06_z.jpg 700w" sizes="(max-width: 300px) 100vw, 300px"></a></p>
+                   <p>En ese momento los franceses se dieron cuenta de la presencia del niño y empezaron a atacar furiosamente. El niño persistió en su posición y siguió avisando de los movimientos del enemigo, cuando una terrible bala alcanzó el corazón del chamaco. Cayó al suelo ya muerto y ensangrentado.</p>
+                   <p>Con los informes proporcionados por el pequeño zacapoaxtla, los soldados mexicanos lograron vencer al tan reputado ejército francés. La ayuda había sido valiosísima. Poco tiempo después, enterraron al intrépido mocito, e Ignacio Zaragoza le nombre héroe de la Batalla de Puebla.</p>
+                   <p>Sonia Iglesias y Cabrera</p>
+                   <p><br>
+                   </p>
+                  </div>
+                  <div></div>
+                 </div>
+                 
+                
+                <div>
+    	
+            <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+            <li class="ui-first-child ui-last-child">
+              <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h2>Inicio de la batalla </h2>
+                  <p>¿En que fecha inicio?</p>
+              </a>
+            </li>
+            <li class="ui-first-child ui-last-child">
+              <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h2>MONUMENTOS </h2>
+                  <p>Monumentos a la batalla del 5 de mayo </p>
+              </a>
+            </li>
+            <li class="ui-first-child ui-last-child">
+              <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h2>Desarrollo de los acontecimientos </h2>
+                  <p>¿Porque se dio esta batalla?</p>
+              </a>
+            </li>
+             <li class="ui-first-child ui-last-child">
+              <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h2>Museo </h2>
+                  <p>Ubicacion </p>
+              </a>
+            </li>
+            <li class="ui-first-child ui-last-child">
+              <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h2>Protagonistas</h2>
+                  <p>Algunas personas que participaron</p>
+              </a>
+            </li>
+            
+            <li class="ui-first-child ui-last-child">
+              <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h2>LINKS</h2>
+                  <p>Paginas</p>
+              </a>
+            </li>
+            
+            
+            </ul>
+     
+          </div>
+          <div data-role="footer"align="center" data-theme="a" data-position="fixed">
+             <div>
+                <img src="res/android/mdpi.png" width="46" height="46">
+             </div>
+             <div>
+                 <h4>Aplicacion Tres </h4>
+                 <h4>Humberto Clara Gomez </h4>
+             </div>
+           </div>
+           </div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                 <h1>Inicio </h1>
+                
+             </div>
+  <div data-role="content" align="center">
+              <p>&nbsp;</p>
+             
+    <div>
+                    
+                 
+      </div>
+    <div align="justify">
+      <p>La batalla de Puebla fue un combate librado el 5 de mayo de 1862 en las cercanías de la ciudad de Puebla, entre los ejércitos de la República Mexicana, bajo el mando de Ignacio Zaragoza, y del Segundo Imperio Francés, dirigido por Charles Ferdinand Latrille, conde de Lorencez, durante la Segunda Intervención Francesa en México, cuyo resultado fue una victoria importante para los mexicanos ya que con unas fuerzas consideradas como inferiores lograron vencer a uno de los ejércitos más experimentados y respetados de su época. Pese a su éxito, la batalla no impidió la invasión del país, aunque sí que sería la primera batalla de una guerra que finalmente México ganaría. Los franceses regresarían al siguiente año, con lo que se libró una segunda batalla en Puebla en la que se enfrentaron 35 000 franceses contra 29 000 mexicanos (defensa que duró 62 días) y lograrían avanzar hasta la Ciudad de México, lo que permitió establecer el Segundo Imperio Mexicano. Finalmente, ante la incapacidad de consolidar un imperio y después de perder 11 000 hombres debido a la actividad guerrillera que nunca dejó de subsistir,1 los franceses se retiraron incondicionalmente del país en el año 1857.A la bestia </p>
+      <div>
+      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','images/1.1.jpg',1)"><img src="images/1.jpg" width="385" height="256" id="Image20" align="middle"></a></p>
+      </div>
+    </div>
+    <p>&nbsp;</p>
+    </div>
+             <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                        <div>
+                            	<img src="res/android/mdpi.png" width="78" height="77">
+                          </div>
+                        	<h4>App3, HCG</h4>
+                        </div>
+           </div>
+           <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                 <h1>Monumentos </h1>
+                
+             </div>
+  <div data-role="content" align="center">
+              <p>&nbsp;</p>
+             
+    <div>
+                    
+                 
+      </div>
+    <p align="justify">Monumento a ignacio zaragoza </p>
+    <p><img src="images/m1.jpg" width="200"></p>
+    <p><img src="images/m2.jpg" width="200"></p>
+    <p>&nbsp;</p>
+    <p><img src="images/m3.jpg" width="200"></p>
+    <p><img src="images/m5.jpg" width="200"></p>
+    <p align="justify">&nbsp;</p>
+    <p>&nbsp;</p>
+    </div>
+             <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                        <div>
+                            	<img src="res/android/mdpi.png" width="78" height="77">
+                          </div>
+                        	<h4>App3, HCG</h4>
+                        </div>
+           </div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                 <h1>DESARROLLO DE LOS ACONTECIMIENTOS </h1>
+                
+             </div>
+  <div data-role="content" align="center">
+              <p align="justify">&nbsp;</p>
+             
+    <div>
+                    
+                 
+      </div>
+    <p align="justify">Los 3 países conforman una alianza para invadir a México. Antes de que la invasión ocurriera, Benito Juárez solicita un acuerdo amistoso para el pago de la deuda. Se generó un documento que firmaron como acuerdo; estos acuerdos y condiciones fueron respetados por España e Inglaterra, pero Francia decide invadir a México.</p>
+    <p align="justify"><strong>El 5 de mayo de 1862 se produce la Batalla de Puebla, </strong>cuando el ejercito francés, al mando del comandante Charles Ferdinand Latrille, aparece por el horizonte en la Hacienda de Remetería cercana a Puebla , cruzando fuego con guerrillas que resistieron. A pesar de ello, continuaron avanzando; de pronto se exhibe una estrategia que dirige hacia el fuerte, medio batallón francés, mientras el otro sigue avanzando con dirección a Puebla.</p>
+    <p align="justify">En vista de esto, Ignacio Zaragoza replantea su estrategia y mueve sus tropas hacia los fuertes, sin descuidar el frente de batalla. Contaba el ejército mexicano con unos 4800 hombres, y aunque los franceses llevaban ventajas, tuvieron que rendirse ante los ataques del ejército de caballería dirigido por Zaragoza.</p>
+    <img src="images/za.jpg" width="200">
+    <p align="justify">&nbsp;</p>
+    <p align="justify">Fue una victoria para México la retirada y el retroceso de tropas llevadas a la rendición por el ejercito de caballería, aunque no impidió una posterior invasión francesa que llevó a una segunda batalla, sin embargo, de forma voluntaria Francia retira sus tropas de Puebla unos meses mas tarde, tras obtener bajas de 11 mil hombres y considerar que  las pérdidas no habían valido la pena.</p>
+    <p align="justify"><img src="images/c.jpg" width="279" height="151"><img src="images/c2.jpg" width="280" height="160"><img src="images/c3.jpg" width="280" height="160"><img src="images/c4.jpeg" width="402" height="274"></p>
+    <p align="justify"><br>
+    </p>
+    <p align="justify">&nbsp;</p>
+    <p>&nbsp;</p>
+    </div>
+             <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                        <div>
+                            	<img src="res/android/mdpi.png" width="78" height="77">
+                          </div>
+                        	<h4>App3, HCG</h4>
+                        </div>
+           </div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                 <h1>Museo </h1>
+                
+             </div>
+  <div data-role="content" align="center">
+              <p>&nbsp;</p>
+             
+    <div>
+                    
+                 
+    </div>
+    <p align="justify">Se le dotó de la tecnología más avanzada para que los visitantes conozcan en forma amena los hechos desarrollados en la zona de los Fuertes. Cuenta con pantallas táctiles, proyecciones en tercera dimensión y mecanismos de interacción tecnológica para atender las solicitudes de información de sus visitantes, en su mayoría escolares. En otra de sus salas se observan hologramas de combatientes que escenifican la batalla del 5 de mayo, pantallas donde se proyectan las acciones de Ignacio Zaragoza durante la gesta, así como vestuarios y diversas fotografías.</p>
+    <p align="justify">&nbsp;</p>
+    <p align="justify">&nbsp;</p>
+    <div>Talleres lúdicos, donferencias, programas educativos y xposiciones temporales.</div>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','images/2.2.jpg',1)"><img src="images/2.jpg" width="300" height="243" id="Image23"></a></p>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','images/3.1.png',1)"><img src="images/3.jpg" width="300" height="200" id="Image24"></a></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    </div>
+             <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                        <div>
+                            	<img src="res/android/mdpi.png" width="78" height="77">
+               </div>
+                        	<h4>App3, HCG</h4>
+             </div>
+           </div>
+           <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                 <h1>LINKS </h1>
+                
+             </div>
+  <div data-role="content" align="center">
+              <p>&nbsp;</p>
+             
+    <div>
+                    
+                 
+    </div>
+    
+    <div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  	<li class="ui-first-child ui-last-child">
+    	<a href="http://puebla.travel/es/museos/item/museo-interactivo-de-la-batalla-del-5-de-mayo" data-role="button" id="beep">
+        <h2>MUSEO </h2>
+    	</a>
+        
+        </li>
+        <li class="ui-first-child ui-last-child">
+    	<a href="https://es.wikipedia.org/wiki/Batalla_de_Puebla" data-role="button" id="vibrar">
+        <h2>BATALLA</h2>
+        </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+    	<a href="https://www.yelp.com.mx/biz/monumento-a-la-victoria-5-de-mayo-puebla" data-role="button" id="vibrar">
+        <h2>Monumento a la victoria </h2>
+        </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+    	<a href="http://www.paxala.com/la-batalla-de-puebla/" data-role="button" id="vibrar">
+        <h2>CAUSAS</h2>
+        </a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        
+    
+    </p>
+    <p align="justify">&nbsp;</p>
+    <p>&nbsp;</p>
+    </div>
+             <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                        <div>
+                            	<img src="res/android/mdpi.png" width="78" height="77">
+                          </div>
+                        	<h4>App3, HCG</h4>
+                        </div>
+           </div>
+            <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                 <h1>Protagonistas  </h1>
+                
+             </div>
+  <div data-role="content" align="center">
+              <p>&nbsp;</p>
+             
+    <div>
+                    
+                 
+    </div>
+    <p align="justify">Algunos protagonistas son </p>
+    <p align="justify">Ignacio Zaragoza quien concentró sus fuerzas en Puebla para su defensa, ordenando que se levantaran barricadas en las calles y resguardándose en tres cerros que rodean la ciudad con los fuertes de San Juan, Guadalupe y Loreto. El Ejército de Oriente, estaba dirigido por los generales Miguel Negrete, Felipe Berriozabal, Porfirio Díaz, Francisco Lamadrid, Santiago Tapia, Antonio Álvarez, Antonio Carbajal y Tomás O’Horán; </p>
+    <p align="justify">Veracruz  encabezado por el general <strong>Juan Nepomuceno Almonte</strong> para que los representara. En respuesta, <strong>Benito Juárez</strong> expidió un decreto declarando traidores a los mexicanos que colaboraran con los franceses e hizo un llamado a tomar las armas, autorizando a los gobernadores de los estados a realizar acciones al respecto y les pidió que enviaran contingentes militares con los que formó el <em>Ejército de Oriente</em>, logrando reunir cerca de 10 mil hombres, cuyos grupos cargaron sus propias insignias y pertrechos hasta Puebla para fortificarla.</p>
+    <p align="justify"><img src="images/h1.jpg" width="190" height="155"><img src="images/h2.jpg" width="133" height="156"><img src="images/h3.jpg" width="92" height="168"></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p align="justify">&nbsp;</p>
+    <p>&nbsp;</p>
+    </div>
+             <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                        <div>
+                            	<img src="res/android/mdpi.png" width="78" height="77">
+                          </div>
+                        	<h4>App3, HCG</h4>
+                        </div>
+           </div>
+           
+           
+</body>
+</html>
