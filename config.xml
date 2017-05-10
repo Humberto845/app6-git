@@ -33,9 +33,10 @@
   <!--plugin name="cordova-plugin-geolocation" source="npm" />-->
     <!--Third part plugins-->
 	<!--Para accesar a paginas en internet-->
-	<allow-internt href="https://*/*"/>
+	<allow-intent href="https://*/*"/>
 	<acces origin="https://*/*"/>
 	<allow-intent href="http://*/*"/>
+	<acces origin="http://*/*"/>
 	<plugin name="cordova-plugin-whitelist" source="npm"/>
 	
 	
